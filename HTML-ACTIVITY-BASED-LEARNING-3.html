@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIIMS Doctor Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+        }
+        header, footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        header {
+            position: relative;
+            min-height: 76px;
+        }
+        header h1 {
+            margin: 0 0 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        main {
+            width: 95%;
+            margin: 20px auto;
+        }
+        section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #9a3412;
+        }
+        .card {
+            background: #fff1d6;
+            border-left: 4px solid #c2410c;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #c2410c;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AIIMS</h1>
+        <nav>
+            <a href="#doctors">Doctors</a>
+            <a href="#booking">Book Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to AIIMS</h2>
+            <p>Book your doctor appointment easily.</p>
+        </section>
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+            <div class="card">
+                <h3>Dr. Rahul</h3>
+                <p>Cardiologist | 9 AM - 12 PM</p>
+            </div>
+            <div class="card">
+                <h3>Dr. Priya</h3>
+                <p>Dermatologist | 10 AM - 2 PM</p>
+            </div>
+        </section>
+        <section id="booking">
+            <h2>Book an Appointment</h2>
+            <form>
+                <label>Patient Name:</label>
+                <input type="text" required>
+                <label>Age:</label>
+                <input type="number" required>
+                <label>Phone Number:</label>
+                <input type="tel" required>
+                <label>Select Doctor:</label>
+                <select required>
+                    <option value="">Choose Doctor</option>
+                    <option>Dr. Rahul</option>
+                    <option>Dr. Priya</option>
+                </select>
+                <label>Appointment Date:</label>
+                <input type="date" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: 9876543210</p>
+            <p>Email: aiims@example.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 AIIMS Hospital</p>
+    </footer>
+</body>
+</html>
